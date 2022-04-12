@@ -31,16 +31,13 @@
         </select>
 
         <p>Would you recommend freeCodeCamp to a friend?</p> <!-- User Story #13 -->
-        <input type="radio" name="recommend">
-        <label for="definitely">Definitely</label> 
-        <input type="radio" name="recommend">
-        <label for="maybe">Maybe</label>
-        <input type="radio" name="recommend">
-        <label for="not-sure">Not sure</label>
+        <label><input type="radio" name="recommend" value="definitely"/>Definitely</label>
+        <label><input type="radio" name="recommend" value="maybe"/>Maybe</label>
+        <label><input type="radio" name="recommend" value="not-sure"/>Not sure</label>
 
         <p>What is your favorite feature of freeCodeCamp?</p>
         <select name="favorite-feature" id="favorite-feature" required>
-            <option value="" disabled selected>Select an option</option> <!-- User Story #14 -->
+            <option value="" disabled selected>Select an option</option> 
             <option value="challanges">Challanges</option>
             <option value="projects">Projects</option>
             <option value="community">Community</option>
@@ -48,28 +45,17 @@
         </select>
 
         <p>What would you like to see improved? <span>(Check all that apply)</span></p>
-        <input type="checkbox" name="front-end">
-        <label for="front-end">Front-end Projects</label>
-        <input type="checkbox" name="back-end">
-        <label for="back-end">Back-end Projects</label>
-        <input type="checkbox" name="data-visualization">
-        <label for="data-visualization">Data Visualization</label>
-        <input type="checkbox" name="challenges">
-        <label for="challenges">Challenges</label>
-        <input type="checkbox" name="open-source-community">
-        <label for="open-source-community">Open Source Community</label>
-        <input type="checkbox" name="gitter-help">
-        <label for="gitter-help">Gitter help rooms</label>
-        <input type="checkbox" name="videos">
-        <label for="videos">Videos</label>
-        <input type="checkbox" name="city-meetups">
-        <label for="city-meetups">City Meetups</label>
-        <input type="checkbox" name="wiki">
-        <label for="wiki">Wiki</label>
-        <input type="checkbox" name="forum">
-        <label for="forum">Forum</label>
-        <input type="checkbox" name="additional-courses">
-        <label for="additional-courses">Additional Courses</label>
+        <label><input type="checkbox" name="prefer" value="front-end-project">Front-end Projects</label> <!-- User Story #14 -->
+        <label><input type="checkbox" name="prefer" value="back-end-project">Back-end Projects</label>
+        <label><input type="checkbox" name="prefer" value="data-visualization">Data Visualization</label>
+        <label><input type="checkbox" name="prefer" value="challanges">Challanges</label>
+        <label><input type="checkbox" name="prefer" value="open-source-community">Open Source Community</label>
+        <label><input type="checkbox" name="prefer" value="gitter-help-rooms">Gitter help rooms</label>
+        <label><input type="checkbox" name="prefer" value="videos">Videos</label>
+        <label><input type="checkbox" name="prefer" value="city-meetups">City Meetups</label>
+        <label><input type="checkbox" name="prefer" value="wiki">Wiki</label>
+        <label><input type="checkbox" name="prefer" value="forum">Forum</label>
+        <label><input type="checkbox" name="prefer" value="additional-courses">Additional Courses</label>
 
         <p>Any comments or suggestions?</p>
         <textarea placeholder="Enter your comment here..." name="comment" id="comments"></textarea> <!-- User Story #15 -->
