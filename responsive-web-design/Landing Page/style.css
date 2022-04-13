@@ -1,0 +1,88 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 100px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    position: fixed; /* User Story #1 */
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex; /* User Story #3 */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#top-star {
+    font-size: 70px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 650px) { /* User Story #2 */
+    #features {
+        margin-top: 0;
+    }
+}
+
+#feature {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 75px 0;
+}
+
+#video {
+    display: block;
+    margin: 75px auto;    
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px auto;
+    padding: 12px;
+    gap: 8px;
+    background-color: grey;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+#header-2 {
+    margin: 0;
+}
+
+#email, #submit {
+    border-radius: 2px;
+}
+
+#submit {
+    background: yellow;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
